@@ -1,4 +1,4 @@
 select  
     orderid as order_id, 
     amount
-from dbt-tutorial.stripe.payment
+from {{ source('stripe', 'payment')}}
