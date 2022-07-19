@@ -16,9 +16,6 @@
    https://docs.getdbt.com/reference/resource-configs/bigquery-configs#use-project-and-dataset-in-configurations
 #}
 
-{% macro generate_database_name(custom_database_name=none, node=none) -%}
-   jaffle_shop
-{%- endmacro %}
 
 {%- set payment_methods = ['bank_transfer', 'credit_card', 'coupon', 'gift_card'] -%}
 
