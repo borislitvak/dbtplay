@@ -1,4 +1,6 @@
 select  
     orderid as order_id, 
-    amount
+    paymentmethod as payment_method,
+    amount,
+    {{ }}
 from {{ source('stripe', 'payment')}}
